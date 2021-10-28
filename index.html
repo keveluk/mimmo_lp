@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mimmo</title>
+</head>
+<body>
+    <section class="container">
+        <div class="video_container">
+            <h1>Conheça a Mimmo</h1>
+            <video controls> 
+                <source src="./assets/video/promocional.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="contato">
+            <h3>Solicite o nosso contato</h3>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type=hidden name="oid" value="00D5f000005XY1k">
+                <input type=hidden name="retURL" value="http://www.google.com">
+                <div class="input_item">
+                    <label hidden=true for="first_name">Primeiro Nome</label>
+                    <input placeholder="Nome"  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                    <label hidden=true for="last_name">Sobrenome</label>
+                    <input placeholder="Sobrenome" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                </div>
+
+                <div class="input_item">
+                    <label hidden=true for="email">Email</label>
+                <input  placeholder="E-mail" id="email" maxlength="80" name="email" size="20" type="text" />
+                
+                <label hidden=true for="company">Empresa</label>
+                <input  placeholder="Empresa" id="company" maxlength="40" name="company" size="20" type="text" />
+                </div>
+
+                <div class="input_item">
+                    <label hidden=true for="zip">CEP</label>
+                    <input placeholder="CEP"  id="zip" maxlength="20" name="zip" size="20" type="text" />
+                    <label hidden=true for="industry">Setor</label>
+                    <select  id="industry" name="industry">
+                    <option value="">Setor</option><option value="Agriculture">Agricultura</option>
+                    <option value="Apparel">Vestuário</option>
+                    <option value="Banking">Bancária</option>
+                    <option value="Biotechnology">Biotecnologia</option>
+                    <option value="Chemicals">Química</option>
+                    <option value="Communications">Comunicações</option>
+                    <option value="Construction">Construção</option>
+                    <option value="Consulting">Consultoria</option>
+                    <option value="Education">Educação</option>
+                    <option value="Electronics">Eletrônica</option>
+                    <option value="Energy">Energia</option>
+                    <option value="Engineering">Engenharia</option>
+                    <option value="Entertainment">Entretenimento</option>
+                    <option value="Environmental">Ambiental</option>
+                    <option value="Food &amp; Beverage">Alimentos &amp; Bebidas</option>
+                    <option value="Government">Pública</option>
+                    <option value="Healthcare &amp; Life Sciences">Saúde</option>
+                    <option value="Hospitality">Hotelaria</option>
+                    <option value="Insurance">Seguros</option>
+                    <option value="Machinery">Machinery</option>
+                    <option value="Manufacturing">Manufatura</option>
+                    <option value="Media">Media</option>
+                    <option value="Not For Profit">Sem Fins Lucrativos</option>
+                    <option value="Other">Outro</option>
+                    <option value="Recreation">Lazer</option>
+                    <option value="Retail">Varejo</option>
+                    <option value="Shipping">Logística</option>
+                    <option value="Technology">Tecnologia</option>
+                    <option value="Telecommunications">Telecomunicações</option>
+                    <option value="Transportation">Transporte</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Financial Services">Serviços Financeiros</option>
+                    </select>
+                </div>
+
+                <div class="input_item">
+                    <label hidden=true for="city">Cidade</label>
+                <input placeholder="Cidade" id="city" maxlength="40" name="city" size="20" type="text" />
+                
+                <label hidden=true for="state">Estado</label>
+                <input placeholder=Estado  id="state" maxlength="20" name="state" size="20" type="text" />
+
+                </div>
+
+                <div class="input_item">
+                    <label hidden=true for="street">Rua</label>
+                <input placeholder="Rua" maxlength="150" name="street" type="text"></input>
+                
+                
+                
+                
+                <label hidden=true for="00N5f00000IsY7H">Região:</label>
+                <select  id="00N5f00000IsY7H" name="00N5f00000IsY7H" title="Região">
+                <option value="">Região</option>
+                <option value="Centro-Oeste">Centro-Oeste</option>
+                <option value="Nordeste">Nordeste</option>
+                <option value="Norte">Norte</option>
+                <option value="Sudeste">Sudeste</option>
+                <option value="Sul">Sul</option>
+                </select>
+                </div>
+                <input class="submit" type="submit" value="Enviar" name="submit">
+                
+                </form>
+                
+        </div>
+    </section>
+</body>
+</html>
